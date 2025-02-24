@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>xpage</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <script src="https://cdn.min.jsdelivr.net/npm/swiper@11/swiper-bundle.min.min.js"></script>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="container">
+              <div class="header__inner">
+                <div class="header__navigate">
+                  <div class="header__logo-box"><a class="logo" href="index.html">
+                      <svg>
+                        <use xlink:href="svg/sprite.svg#logo"></use>
+                      </svg></a>
+                  </div>
+                  <nav class="nav nav--hide-md">
+                    <ul class="nav__list">
+                      <li class="nav__list-item"><a class="nav__list-link active" href="somepage.html">играть</a></li>
+                      <li class="nav__list-item"><a class="nav__list-link" href="somepage.html">смотреть</a></li>
+                      <li class="nav__list-item"><a class="nav__list-link" href="somepage.html">учиться</a></li>
+                      <li class="nav__list-item"><a class="nav__list-link" href="somepage.html">мероприятия</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="header__menu">
+                  <button class="header__menu-button text-uppercase">
+                    <svg>
+                      <use xlink:href="svg/sprite.svg#burger"></use>
+                    </svg><span>Меню</span>
+                  </button>
+                </div>
+                <div class="header__user">
+                  <button class="header__user-button">
+                    <div class="header__user-name text-uppercase">Геннадий П.</div>
+                    <div class="header__user-avatar"><img src="img/header/user.jpg" alt="Изображение пользователя"></div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <section class="section section--hero">
+            <div class="container"> 
+              <div class="section__wrapper">
+                <div class="section__body">
+                  <div class="hero">
+                    <div class="hero__swiper swiper" data-slider-fade>
+                      <div class="hero__swiper-wrapper swiper-wrapper">
+                        <div class="hero__swiper-slide swiper-slide" data-pagination-text="играй">
+                          <picture class="picture">
+                            <source media="(max-width: 768px)" srcset="img/hero/1-mobile.webp" type="image/webp"/>
+                            <source srcset="img/hero/1.webp" type="image/webp"/><img srcset="img/hero/1.jpg" alt="Игра в баскетбол"/>
+                          </picture>
+                          <h1 class="hero__title"> <span>Найди с&nbsp;кем</span><span>поиграть в&nbsp;баскет</span></h1>
+                        </div>
+                        <div class="hero__swiper-slide swiper-slide" data-pagination-text="учись">
+                          <picture class="picture">
+                            <source media="(max-width: 768px)" srcset="img/hero/2-mobile.webp" type="image/webp"/>
+                            <source srcset="img/hero/2.webp" type="image/webp"/><img srcset="img/hero/2.jpg" alt="Игра в баскетбол"/>
+                          </picture>
+                          <h1 class="hero__title"> <span>Учись играть </span><span>в&nbsp;баскет</span></h1>
+                        </div>
+                        <div class="hero__swiper-slide swiper-slide" data-pagination-text="смотри">
+                          <picture class="picture">
+                            <source media="(max-width: 768px)" srcset="img/hero/3-mobile.webp" type="image/webp"/>
+                            <source srcset="img/hero/3.webp" type="image/webp"/><img srcset="img/hero/3.jpg" alt="Игра в баскетбол"/>
+                          </picture>
+                          <h1 class="hero__title"> <span>Смотри как </span><span>играют в&nbsp;баскет</span></h1>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section play">
+            <div class="container"> 
+              <div class="section__wrapper section__wrapper--gap">
+                <div class="section__head">
+                  <div class="head-page">
+                    <h2 class="head-page__title">играй</h2><a class="into into--orange" href="somepage.html"><span>в раздел</span>
+                      <svg>
+                        <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="section__body">
+                  <div class="play__row">
+                    <article class="play-card active">
+                      <div class="play-card__wrapper">
+                        <div class="play-card__content">
+                          <div class="play-card__container">
+                            <div class="play-card__picture">
+                              <picture class="picture">
+                                <source media="(max-width: 568px)" srcset="img/play/play-1-xs.png" type="image/png"/>
+                                <source srcset="img/play/play-1-hd.png" type="image/png"/><img srcset="img/play/play-1-hd.png" alt="Игра в баскетбол"/>
+                              </picture>
+                            </div>
+                            <div class="play-card__about">
+                              <div class="play-card__head">Найди себе команду</div>
+                              <p class="play-card__text">Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.</p>
+                            </div>
+                          </div>
+                          <div class="play-card__button"><a class="btn" href="page.html"><span>текст кнопки</span>
+                              <svg>
+                                <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="play-card active">
+                      <div class="play-card__wrapper">
+                        <div class="play-card__content">
+                          <div class="play-card__container">
+                            <div class="play-card__picture">
+                              <picture class="picture">
+                                <source media="(max-width: 568px)" srcset="img/play/play-2-xs.png" type="image/png"/>
+                                <source srcset="img/play/play-2-hd.png" type="image/png"/><img srcset="img/play/play-2-hd.png" alt="Баскетбольный мяч"/>
+                              </picture>
+                            </div>
+                            <div class="play-card__about">
+                              <div class="play-card__head">Создавай команды</div>
+                              <p class="play-card__text">Игры на районе - это возможность найти с кем поиграть в баскетбол в выходные, или создать свою игру и пригласить других игроков присоединиться.</p>
+                            </div>
+                          </div>
+                          <div class="play-card__button"><a class="btn" href="page.html"><span>текст кнопки</span>
+                              <svg>
+                                <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="play-card active">
+                      <div class="play-card__wrapper">
+                        <div class="play-card__content">
+                          <div class="play-card__container">
+                            <div class="play-card__picture">
+                              <picture class="picture">
+                                <source media="(max-width: 568px)" srcset="img/play/play-3-xs.png" type="image/png"/>
+                                <source srcset="img/play/play-3-hd.png" type="image/png"/><img srcset="img/play/play-3-hd.png" alt="Игра в баскетбол"/>
+                              </picture>
+                            </div>
+                            <div class="play-card__about">
+                              <div class="play-card__head">Участвуй в турнирах</div>
+                              <p class="play-card__text">Участвуйте в турнирах вместе с вашей командой. Будьте активными, побеждайте и получайте ачивки и призы от наших спонсоров.</p>
+                            </div>
+                          </div>
+                          <div class="play-card__button"><a class="btn" href="page.html"><span>текст кнопки</span>
+                              <svg>
+                                <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                              </svg></a>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section section--last learn">
+            <div class="container"> 
+              <div class="section__wrapper section__wrapper--gap section__wrapper--layout-white">
+                <div class="section__head">
+                  <div class="head-page">
+                    <h2 class="head-page__title">Учись</h2><a class="into into--green" href="somepage.html"><span>в раздел</span>
+                      <svg>
+                        <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                      </svg></a>
+                  </div>
+                </div>
+                <div class="section__body section__body--aside">
+                  <div class="section__content section__content--gap">
+                    <div class="learn__center">
+                      <div class="learn__center-image">
+                        <picture class="picture">
+                          <source media="(max-width: 568px)" srcset="img/learn/learn-xs.webp" type="image/webp"/>
+                          <source srcset="img/learn/learn-hd.webp" type="image/webp"/><img srcset="img/learn/learn-hd.jpg" alt="Спортивная игра"/>
+                        </picture>
+                      </div>
+                      <div class="learn__center-content">
+                        <h3 class="h3 learn__head">мы&nbsp;собрали секции для&nbsp;детей по&nbsp;всему городу</h3>
+                        <div class="learn__center-tags">
+                          <div class="tag tag--green" data-tags=""><span class="tag__item" data-tag=""><span class="tag__name">12 секций по всему городу</span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="learn__choice">
+                      <h3 class="h3 learn__head">Подбери тренера под свой уровень</h3>
+                      <div class="learn__choice-tags">
+                        <div class="tag tag--green tag--row" data-tags=""><span class="tag__item" data-tag=""><a class="tag__name" href="somePath">детская тренировка</a></span><span class="tag__item" data-tag=""><a class="tag__name" href="somePath">для начинающих</a></span><span class="tag__item" data-tag=""><a class="tag__name" href="somePath">стритбол</a></span><span class="tag__item" data-tag=""><a class="tag__name" href="somePath">выезд тренера на дом</a></span><span class="tag__item active" data-tag=""><a class="tag__name" href="somePath">12 фильтров</a></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="section__right section__right--md-hide">
+                    <div class="learn__parts">
+                      <div class="learn__parts-container">
+                        <div class="learn__parts-block">
+                          <article class="materials">
+                            <div class="materials__content">
+                              <h6 class="materials__heading"><a class="materials__head-link" href="#">Видеоуроки
+                                  <svg>
+                                    <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                                  </svg></a></h6>
+                              <div class="materials__about materials__about--flex">
+                                <div class="materials__picture">
+                                  <picture class="picture">
+                                    <source srcset="img/learn/poster.jpg" type="image/webp"/><img srcset="img/learn/poster.jpg" alt="Игра в баскетбол"/>
+                                  </picture>
+                                </div>
+                                <div class="materials__info-block materials__info-block--col"><a class="materials__headline" href="#">Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</a>
+                                  <div class="materials__tags">
+                                    <div class="tag tag--gray" data-tags=""><span class="tag__item" data-tag=""><span class="tag__name">26 октября</span></span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="learn__parts-block">
+                          <article class="materials">
+                            <div class="materials__content">
+                              <h6 class="materials__heading"><a class="materials__head-link" href="#">статьи
+                                  <svg>
+                                    <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                                  </svg></a></h6>
+                              <div class="materials__about"><a class="materials__headline" href="#">Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»</a>
+                                <div class="materials__tags">
+                                  <div class="tag tag--gray" data-tags=""><span class="tag__item" data-tag=""><span class="tag__name">26 октября</span></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                        <div class="learn__parts-block">
+                          <article class="materials">
+                            <div class="materials__content">
+                              <h6 class="materials__heading"><a class="materials__head-link" href="#">термины
+                                  <svg>
+                                    <use xlink:href="svg/sprite.svg#arrow-right2"></use>
+                                  </svg></a></h6>
+                              <div class="materials__about">
+                                <div class="materials__tags">
+                                  <div class="tag tag--gray tag--row" data-tags=""><span class="tag__item" data-tag=""><a class="tag__name" href="#">треха</a></span><span class="tag__item" data-tag=""><a class="tag__name" href="#">трехочковый бросок</a></span><span class="tag__item active" data-tag=""><a class="tag__name" href="#">36 терминов</a></span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="container">
+            <div class="footer__container">
+              <div class="footer__inner footer__inner--aside">
+                <div class="footer__content">
+                  <h3 class="h3 footer__head">Еще больше полезных материалов и видеоуроков в нашем приложении</h3>
+                  <div class="footer__icons">
+                    <div class="footer__icon">
+                      <svg>
+                        <use xlink:href="svg/sprite.svg#apple-t-icon"></use>
+                      </svg>
+                    </div>
+                    <div class="footer__icon">
+                      <svg>
+                        <use xlink:href="svg/sprite.svg#google-t-play-icon"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__right footer__right--md-hide">
+                  <div class="footer__label">
+                    <div class="footer__label-qr">
+                      <svg>
+                        <use xlink:href="svg/sprite.svg#qr-code"></use>
+                      </svg>
+                    </div>
+                    <div class="footer__label-sistem">iOS / Android</div>
+                    <div class="footer__label-text">Наведите камеру устройства на QR-код, чтобы скачать</div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__copyright"><span class="footer__copiright-text">сделано в</span><a class="footer__copiright-link" href="#">xpage</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bg">
+          <picture class="picture">
+            <source media="(max-width: 768px)" srcset="img/footer/basketball_xs@2x.png" type="image/png"/>
+            <source srcset="img/footer/basketball_hd.png" type="image/png"/><img srcset="img/footer/basketball_hd.png" alt="Баскетбольный мяч"/>
+          </picture>
+        </div>
+      </footer>
+    </div>
+	
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
